@@ -1,13 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import { FaJoint } from "react-icons/fa"
+import SimpleHero from "../components/SimpleHero"
 
 export default () => (
   <>
     <Layout>
-      Hello world! <Link to="/blog/"> Blog page</Link>
-      <FaJoint />
+      <SimpleHero />
     </Layout>
   </>
 )
