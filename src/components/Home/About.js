@@ -5,7 +5,6 @@ import styles from "../../css/about.module.css"
 import images from "../../images/defaultBcg.jpeg"
 
 const About = () => {
-  console.log(images)
   return (
     <section className={styles.about}>
       <Title title="about" subtitle="us" />
