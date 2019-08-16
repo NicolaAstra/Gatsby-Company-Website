@@ -5,7 +5,11 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-sass`,
-            `gatsby-plugin-styled-components`],
+  siteMetadata: {
+    title: "Company Website",
+    description: "this is website company",
+    author: "@ncx",
+    data: ["item1", "item2"],
+  },
+  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
 }
-    
