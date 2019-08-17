@@ -9,7 +9,10 @@ module.exports = {
     title: "Company Website",
     description: "this is website company",
     author: "@ncx",
-    data: ["item1", "item2"],
+    data: {
+      name: "john",
+      age: "24",
+    },
   },
   plugins: [`gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
 }
