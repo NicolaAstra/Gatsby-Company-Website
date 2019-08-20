@@ -14,8 +14,6 @@ const Navbar = () => {
     setNav(isOpen => !isOpen)
   }
 
-  console.log(isOpen)
-
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
@@ -35,7 +33,9 @@ const Navbar = () => {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <AniLink to={item.path}>{item.text}</AniLink>
+                <AniLink fade to={item.path}>
+                  {item.text}
+                </AniLink>
               </li>
             )
           })}
