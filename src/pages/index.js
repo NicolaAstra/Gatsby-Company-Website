@@ -14,7 +14,7 @@ export default ({ data }) => (
         title="continue exploring"
         info="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, animi!"
       >
-        <AniLink to="/tours" className="btn-white">
+        <AniLink fade to="/tours" className="btn-white">
           explore tours
         </AniLink>
       </Banner>
