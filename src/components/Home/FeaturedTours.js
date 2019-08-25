@@ -33,9 +33,11 @@ const FeaturedTours = () => {
   return (
     <section className={styles.tours}>
       <Title title="featured" subtitle="tours" />
-      {tours.map(({ node }) => {
-        return <Tour key={node.contentful_id} tour={node} />
-      })}
+      <div className={styles.center}>
+        {tours.map(({ node }) => {
+          return <Tour key={node.contentful_id} tour={node} />
+        })}
+      </div>
 
       <AniLink fade to="/tours" className="btn-primary">
         all tours
