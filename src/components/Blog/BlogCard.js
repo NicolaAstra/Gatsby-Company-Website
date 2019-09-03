@@ -10,7 +10,7 @@ const BlogCard = ({ blog }) => {
       <div className={styles.imgContainer}>
         <Image fluid={image.fluid} className={styles.img} alt="single post" />
         <AniLink fade className={styles.link} to={`/blog/${slug}`}>
-          read more
+          see more
         </AniLink>
         <h6 className={styles.date}>{published}</h6>
       </div>
