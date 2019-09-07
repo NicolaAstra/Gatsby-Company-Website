@@ -12,12 +12,16 @@ module.exports = {
     title: "Company Website",
     description: "this is website company",
     author: "@ncx",
+    twitterUsername:"@ncx",
+    image:'/defaultBcg.jpeg',
+    siteUrl:'https://company-profile-website.netlify.com',
     data: {
       name: "john",
       age: "24",
     },
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

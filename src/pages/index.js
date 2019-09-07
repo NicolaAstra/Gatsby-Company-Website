@@ -7,9 +7,11 @@ import Services from "../components/Home/services"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import FeaturedTours from "../components/Home/FeaturedTours"
+import SEO from "../components/SEO"
 
 export default ({ data }) => (
   <Layout>
+  <SEO title="Home" description="this is description"/>
     <StyledHero home="true">
       <Banner
         title="continue exploring"
