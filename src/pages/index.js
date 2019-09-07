@@ -11,7 +11,7 @@ import SEO from "../components/SEO"
 
 export default ({ data }) => (
   <Layout>
-  <SEO title="Home" description="this is description"/>
+    <SEO title="Home" />
     <StyledHero home="true">
       <Banner
         title="continue exploring"
