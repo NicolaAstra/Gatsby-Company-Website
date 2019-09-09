@@ -12,9 +12,9 @@ module.exports = {
     title: "Company Website",
     description: "this is website company",
     author: "@ncx",
-    twitterUsername:"@ncx",
-    image:'/defaultBcg.jpeg',
-    siteUrl:'https://company-profile-website.netlify.com',
+    twitterUsername: "@ncx",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://company-profile-website.netlify.com",
     data: {
       name: "john",
       age: "24",
@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -35,6 +36,14 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://company-profile-website.netlify.com",
+        sitemap: "https://company-profile-website.netlify.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     `gatsby-transformer-sharp`,
